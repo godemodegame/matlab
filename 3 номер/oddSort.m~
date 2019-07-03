@@ -1,0 +1,12 @@
+function [array,arrayCount] = oddSort(matrix)
+    arrayCount = 0;
+    [m,n] = size(matrix
+    for line = 1:m
+        for column = 1:matrixCount
+            if rem(matrix(line, column), 2) == 1
+                arrayCount = arrayCount + 1;
+                array(arrayCount) = matrix(line, column);
+            end
+        end
+    end
+end
